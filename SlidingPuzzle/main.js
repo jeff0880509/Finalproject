@@ -1,7 +1,5 @@
 $(function() {
 	var posConv = { };
-    var check=[0,1,2,3,4,5,6,7,8];
-    var order=[];
     var finish=new Boolean(false);
     var begin=new Boolean(false);
 	for (var i=0; i<16; i++)
@@ -33,24 +31,6 @@ $(function() {
 					ahead.after(behind);
 					behindPrev.after(ahead);
 				}
-                check[i]==j;
-                check[j]==i;
-                for(var m=0;m<9;m++)
-                {
-                    if(order[m]==check[m])
-                        finish=true;
-                    else
-                    {
-                        finish=false;
-                        break;
-                    }    
-                }
-                if(finish==true && begin==true)
-                {    
-                    alert("成功");
-                    finish=false;
-                    begin==false;
-                }
 			}		
 		}
 	});
@@ -74,8 +54,6 @@ $(function() {
 			var cells = $("#dvPuzzle div");
 			var toMove = getNearPos(cells.index($("#Pic0")[0]));
 			cells.eq(toMove[ parseInt(Math.random() * toMove.length) ]).click();
-            
 		}
-        begin=true;
 	});
 });
