@@ -10,7 +10,7 @@ $(document).ready(function()
 		else if(ran==1)
 			$("img#bbb").attr("src","introduction/volleyball03.jpg");
 		else if(ran==2)
-			$("img#bbb").attr("src","introduction/volleyball01.jpg");
+			$("img#bbb").attr("src","introduction/volleyball05.jpg");
 		else if(ran==3)
 			$("img#bbb").attr("src","introduction/volleyball04.jpg");
         else if(ran==4)
