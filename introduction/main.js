@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    $("input").click(function()
+    $("input#aaa").click(function()
     {
         var num = $("#choices li").length;
         var ran =Math.floor(Math.random()*num);
